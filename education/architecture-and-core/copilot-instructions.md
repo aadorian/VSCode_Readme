@@ -1,5 +1,7 @@
 # VS Code Copilot Instructions
 
+In this **educational** repository, curated docs follow the map in [education/README.md](../README.md). The folder names below match **upstream** [microsoft/vscode](https://github.com/microsoft/vscode) (for example `src/`, `extensions/`), not the paths on disk here.
+
 ## Project Overview
 
 Visual Studio Code is built with a layered architecture using TypeScript, web APIs and Electron, combining web technologies with native app capabilities. The codebase is organized into key architectural layers:
