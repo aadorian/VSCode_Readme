@@ -10,6 +10,10 @@ Read the learning map and folder guide:
 
 **[education/README.md](education/README.md)**
 
+## Hello world (Extension API sample)
+
+A minimal extension that follows this tour (bundled-extensions + Extension API) lives in **[hello-world-extension/](hello-world-extension/)** — see its README for `npm install`, compile, and **F5** steps.
+
 ## Quick links
 
 | Topic | Location |
