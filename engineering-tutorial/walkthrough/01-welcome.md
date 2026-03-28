@@ -1,5 +1,9 @@
 ## Welcome
 
+![Syllabus modules (visual map)](media/learning-path.svg)
+
+**Rendered Markdown:** [Open preview for education/README.md](command:engineeringTutorial.previewSyllabus) (uses the built-in Markdown preview beside your editor).
+
 This walkthrough mirrors **[education/README.md](command:engineeringTutorial.openSyllabus)** in this repository: a path from **open-source community** → **GitHub collaboration** → **architecture** → **sessions / agents** → **extensions** → **engineering tooling**.
 
 ### Before you start

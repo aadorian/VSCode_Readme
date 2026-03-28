@@ -6,6 +6,9 @@ Interactive **walkthrough** + **commands** that teach software engineering pract
 
 - **Walkthrough:** *Software engineering on VS Code (open collaboration tour)* — 9 steps from open source → GitHub → architecture → sessions → extensions → tooling → daily habits.
 - **Commands:** Palette entries prefixed with **SE Tutorial:** open the matching syllabus files when this repo is the workspace root.
+- **Markdown visualization:** Each step links to **Preview … (Markdown)** commands that call the built-in `markdown.showPreviewToSide` / `markdown.showPreview` APIs so tables and headings render readably. Step panels also embed **SVG** diagrams under `walkthrough/media/`.
+- **Open walkthrough from palette:** **SE Tutorial: Open this walkthrough (+ syllabus preview)** opens the tour and, after a short delay, opens a **preview** of `education/README.md` beside the editor (requires the repo root in the workspace).
+- **Welcome → Walkthroughs:** If you start the tour from the Welcome page, use **Preview syllabus (Markdown)** on step 1 (or any step’s preview link) to open the rendered view.
 
 ## Run for development
 

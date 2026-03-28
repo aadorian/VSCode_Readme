@@ -1,5 +1,9 @@
 ## Module 5 — Bundled extensions (ecosystem)
 
+![Syllabus modules](media/learning-path.svg)
+
+**Rendered Markdown:** [Preview bundled extensions CONTRIBUTING](command:engineeringTutorial.previewBundledExtensionsContributing)
+
 First-party extensions ship **in-repo** with the same manifest model as community extensions: `package.json`, activation, contributions.
 
 ### Read in the repo

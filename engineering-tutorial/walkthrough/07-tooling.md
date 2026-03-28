@@ -1,5 +1,9 @@
 ## Module 6 — Engineering tooling
 
+![Syllabus modules](media/learning-path.svg)
+
+**Rendered Markdown:** [Preview dev container README](command:engineeringTutorial.previewDevcontainerReadme)
+
 Shipping quality software depends on **repeatable environments**, **tests**, and **automation**—not only heroics in the IDE.
 
 ### Read in the repo

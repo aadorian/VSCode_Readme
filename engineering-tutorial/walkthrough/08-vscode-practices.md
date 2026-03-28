@@ -1,5 +1,7 @@
 ## Module 7 — Daily software engineering habits in VS Code
 
+**Rendered Markdown:** [Preview this step (full checklist)](command:engineeringTutorial.previewWalkthroughDailyPractices)
+
 Connect the syllabus to **how you work every day**.
 
 ### Source control

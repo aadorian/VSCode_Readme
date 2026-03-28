@@ -1,5 +1,9 @@
 ## Module 1 — Open source community
 
+![Syllabus modules](media/learning-path.svg)
+
+**Rendered Markdown:** [Preview Code - OSS overview](command:engineeringTutorial.previewCodeOssOverview) · [Preview CONTRIBUTING](command:engineeringTutorial.previewContributing)
+
 Professional work on large products usually combines **public governance** (license, conduct, security) with **clear contribution entry points**.
 
 ### Read in the repo

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" width="280" height="200" role="img" aria-label="VS Code layer stack">
+  <rect width="280" height="200" rx="8" fill="#1e1e1e" stroke="#3c3c3c"/>
+  <text x="140" y="24" text-anchor="middle" fill="#cccccc" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Workbench layers (simplified)</text>
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#e0e0e0">
+    <rect x="40" y="44" width="200" height="28" rx="4" fill="#264f78" stroke="#007fd4"/>
+    <text x="140" y="63" text-anchor="middle">workbench (UI, chat, sessions)</text>
+    <rect x="40" y="84" width="200" height="28" rx="4" fill="#3d2f5c" stroke="#68217a"/>
+    <text x="140" y="103" text-anchor="middle">editor</text>
+    <rect x="40" y="124" width="200" height="28" rx="4" fill="#1f4d2f" stroke="#389a6b"/>
+    <text x="140" y="143" text-anchor="middle">platform (services, DI)</text>
+    <rect x="40" y="164" width="200" height="28" rx="4" fill="#4a3d1f" stroke="#b8950c"/>
+    <text x="140" y="183" text-anchor="middle">base (utilities)</text>
+  </g>
+</svg>

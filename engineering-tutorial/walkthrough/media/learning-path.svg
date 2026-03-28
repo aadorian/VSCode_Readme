@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" width="720" height="120" role="img" aria-label="Learning path: six modules left to right">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0e639c;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#68217a;stop-opacity:0.2"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#888"/>
+    </marker>
+  </defs>
+  <rect width="720" height="120" rx="8" fill="url(#bg)"/>
+  <text x="360" y="22" text-anchor="middle" fill="#cccccc" font-family="system-ui,sans-serif" font-size="13" font-weight="600">education/README.md path</text>
+  <g font-family="system-ui,sans-serif" font-size="10" fill="#dddddd">
+    <rect x="12" y="40" width="100" height="64" rx="6" fill="#1e1e1e" stroke="#007fd4" stroke-width="1"/>
+    <text x="62" y="68" text-anchor="middle">1 Community</text>
+    <text x="62" y="84" text-anchor="middle" font-size="8" fill="#999999">OSS / conduct</text>
+    <path d="M118 72h24" stroke="#888888" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="146" y="40" width="100" height="64" rx="6" fill="#1e1e1e" stroke="#007fd4" stroke-width="1"/>
+    <text x="196" y="68" text-anchor="middle">2 GitHub</text>
+    <text x="196" y="84" text-anchor="middle" font-size="8" fill="#999999">PRs / issues</text>
+    <path d="M252 72h24" stroke="#888888" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="280" y="40" width="100" height="64" rx="6" fill="#1e1e1e" stroke="#007fd4" stroke-width="1"/>
+    <text x="330" y="68" text-anchor="middle">3 Architecture</text>
+    <text x="330" y="84" text-anchor="middle" font-size="8" fill="#999999">layers / API</text>
+    <path d="M386 72h24" stroke="#888888" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="414" y="40" width="100" height="64" rx="6" fill="#1e1e1e" stroke="#007fd4" stroke-width="1"/>
+    <text x="464" y="68" text-anchor="middle">4 Sessions</text>
+    <text x="464" y="84" text-anchor="middle" font-size="8" fill="#999999">chat / agents</text>
+    <path d="M520 72h24" stroke="#888888" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="548" y="40" width="80" height="64" rx="6" fill="#1e1e1e" stroke="#007fd4" stroke-width="1"/>
+    <text x="588" y="68" text-anchor="middle">5 Ext</text>
+    <text x="588" y="84" text-anchor="middle" font-size="8" fill="#999999">bundled</text>
+    <path d="M634 72h20" stroke="#888888" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="658" y="40" width="54" height="64" rx="6" fill="#1e1e1e" stroke="#007fd4" stroke-width="1"/>
+    <text x="685" y="72" text-anchor="middle" font-size="9">6 Tool</text>
+    <text x="685" y="88" text-anchor="middle" font-size="8" fill="#999999">CI / dev</text>
+  </g>
+</svg>

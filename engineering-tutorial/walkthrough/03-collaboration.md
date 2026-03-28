@@ -1,5 +1,9 @@
 ## Module 2 — Collaboration workflows
 
+![Syllabus modules](media/learning-path.svg)
+
+**Rendered Markdown:** [Preview pull request template](command:engineeringTutorial.previewPullRequestTemplate)
+
 Distributed teams align through **issues**, **pull requests**, and **templates** so reviewers get consistent context.
 
 ### Read in the repo

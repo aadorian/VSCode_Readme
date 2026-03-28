@@ -1,5 +1,9 @@
 ## Module 4 — Sessions, chat & agents
 
+![Syllabus modules](media/learning-path.svg)
+
+**Rendered Markdown:** [Preview sessions README](command:engineeringTutorial.previewSessionsReadme)
+
 The workbench is extending from **files + terminal** toward **conversations and agents** that share context with the editor.
 
 ### Read in the repo

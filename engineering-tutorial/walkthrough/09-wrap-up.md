@@ -1,5 +1,7 @@
 ## You’re set
 
+**Rendered Markdown:** [Preview syllabus again](command:engineeringTutorial.previewSyllabus)
+
 You walked the **same sequence** as `education/README.md`:
 
 1. Open source community  

@@ -1,5 +1,9 @@
 ## Module 3 — Architecture & core surfaces
 
+![Layer stack (simplified)](media/layers.svg)
+
+**Rendered Markdown:** [Preview Copilot / architecture instructions](command:engineeringTutorial.previewCopilotInstructions)
+
 Maintainable editors use **layers** and **extension boundaries** so features do not collapse into one ball of mud.
 
 ### Read in the repo

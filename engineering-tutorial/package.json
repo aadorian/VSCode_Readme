@@ -2,7 +2,7 @@
 	"name": "engineering-tutorial",
 	"displayName": "VS Code SE Practices (education walkthrough)",
 	"description": "Step-by-step walkthrough for software engineering practice on VS Code, aligned with this repo's education/README.md syllabus.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "vscode-readme-education",
 	"license": "MIT",
 	"repository": {
@@ -12,6 +12,9 @@
 	"engines": {
 		"vscode": "^1.85.0"
 	},
+	"extensionDependencies": [
+		"vscode.markdown-language-features"
+	],
 	"categories": [
 		"Other"
 	],
@@ -31,7 +34,16 @@
 		"onCommand:engineeringTutorial.openSessionsReadme",
 		"onCommand:engineeringTutorial.openBundledExtensionsContributing",
 		"onCommand:engineeringTutorial.openDevcontainerReadme",
-		"onCommand:engineeringTutorial.openThisWalkthrough"
+		"onCommand:engineeringTutorial.openThisWalkthrough",
+		"onCommand:engineeringTutorial.previewSyllabus",
+		"onCommand:engineeringTutorial.previewCodeOssOverview",
+		"onCommand:engineeringTutorial.previewContributing",
+		"onCommand:engineeringTutorial.previewPullRequestTemplate",
+		"onCommand:engineeringTutorial.previewCopilotInstructions",
+		"onCommand:engineeringTutorial.previewSessionsReadme",
+		"onCommand:engineeringTutorial.previewBundledExtensionsContributing",
+		"onCommand:engineeringTutorial.previewDevcontainerReadme",
+		"onCommand:engineeringTutorial.previewWalkthroughDailyPractices"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -70,7 +82,43 @@
 			},
 			{
 				"command": "engineeringTutorial.openThisWalkthrough",
-				"title": "SE Tutorial: Open this walkthrough"
+				"title": "SE Tutorial: Open this walkthrough (+ syllabus preview)"
+			},
+			{
+				"command": "engineeringTutorial.previewSyllabus",
+				"title": "SE Tutorial: Preview syllabus (Markdown)"
+			},
+			{
+				"command": "engineeringTutorial.previewCodeOssOverview",
+				"title": "SE Tutorial: Preview Code - OSS overview"
+			},
+			{
+				"command": "engineeringTutorial.previewContributing",
+				"title": "SE Tutorial: Preview CONTRIBUTING"
+			},
+			{
+				"command": "engineeringTutorial.previewPullRequestTemplate",
+				"title": "SE Tutorial: Preview pull request template"
+			},
+			{
+				"command": "engineeringTutorial.previewCopilotInstructions",
+				"title": "SE Tutorial: Preview architecture / Copilot instructions"
+			},
+			{
+				"command": "engineeringTutorial.previewSessionsReadme",
+				"title": "SE Tutorial: Preview sessions README"
+			},
+			{
+				"command": "engineeringTutorial.previewBundledExtensionsContributing",
+				"title": "SE Tutorial: Preview bundled extensions CONTRIBUTING"
+			},
+			{
+				"command": "engineeringTutorial.previewDevcontainerReadme",
+				"title": "SE Tutorial: Preview dev container README"
+			},
+			{
+				"command": "engineeringTutorial.previewWalkthroughDailyPractices",
+				"title": "SE Tutorial: Preview daily practices (this step)"
 			}
 		],
 		"walkthroughs": [
@@ -82,7 +130,7 @@
 					{
 						"id": "welcome",
 						"title": "How to use this tutorial",
-						"description": "Open this repository as a VS Code folder, then use the links in each step. Shortcuts appear in the Command Palette under **SE Tutorial:**.\n[Open syllabus in editor](command:engineeringTutorial.openSyllabus)",
+						"description": "Open this repository as a VS Code folder, then use the links in each step. Shortcuts appear in the Command Palette under **SE Tutorial:**.\n[Open syllabus in editor](command:engineeringTutorial.openSyllabus)\n[Preview syllabus as rendered Markdown](command:engineeringTutorial.previewSyllabus)",
 						"media": {
 							"markdown": "walkthrough/01-welcome.md"
 						},
@@ -93,7 +141,7 @@
 					{
 						"id": "openSource",
 						"title": "1. Open source community",
-						"description": "Understand Code - OSS vs the VS Code product, then read how contributions are expected.\n[Open overview](command:engineeringTutorial.openCodeOssOverview)\n[Open CONTRIBUTING](command:engineeringTutorial.openContributing)",
+						"description": "Understand Code - OSS vs the VS Code product, then read how contributions are expected.\n[Open overview](command:engineeringTutorial.openCodeOssOverview)\n[Open CONTRIBUTING](command:engineeringTutorial.openContributing)\n[Preview overview (Markdown)](command:engineeringTutorial.previewCodeOssOverview)\n[Preview CONTRIBUTING (Markdown)](command:engineeringTutorial.previewContributing)",
 						"media": {
 							"markdown": "walkthrough/02-open-source.md"
 						},
@@ -104,7 +152,7 @@
 					{
 						"id": "collaboration",
 						"title": "2. Collaboration on GitHub",
-						"description": "Structured issues and pull requests are how large teams stay aligned.\n[Open PR template](command:engineeringTutorial.openPullRequestTemplate)",
+						"description": "Structured issues and pull requests are how large teams stay aligned.\n[Open PR template](command:engineeringTutorial.openPullRequestTemplate)\n[Preview PR template (Markdown)](command:engineeringTutorial.previewPullRequestTemplate)",
 						"media": {
 							"markdown": "walkthrough/03-collaboration.md"
 						},
@@ -115,7 +163,7 @@
 					{
 						"id": "architecture",
 						"title": "3. Architecture & Extension API",
-						"description": "See how the editor is layered and where extensions fit.\n[Open Copilot / architecture instructions](command:engineeringTutorial.openCopilotInstructions)",
+						"description": "See how the editor is layered and where extensions fit.\n[Open Copilot / architecture instructions](command:engineeringTutorial.openCopilotInstructions)\n[Preview architecture doc (Markdown)](command:engineeringTutorial.previewCopilotInstructions)",
 						"media": {
 							"markdown": "walkthrough/04-architecture.md"
 						},
@@ -126,7 +174,7 @@
 					{
 						"id": "sessions",
 						"title": "4. Sessions, chat & agents",
-						"description": "Modern VS Code adds agentic workflows on top of the workbench.\n[Open sessions README](command:engineeringTutorial.openSessionsReadme)",
+						"description": "Modern VS Code adds agentic workflows on top of the workbench.\n[Open sessions README](command:engineeringTutorial.openSessionsReadme)\n[Preview sessions README (Markdown)](command:engineeringTutorial.previewSessionsReadme)",
 						"media": {
 							"markdown": "walkthrough/05-sessions.md"
 						},
@@ -137,7 +185,7 @@
 					{
 						"id": "extensions",
 						"title": "5. Bundled extensions ecosystem",
-						"description": "First-party extensions ship beside the core—same packaging model as your own extensions.\n[Open extensions CONTRIBUTING](command:engineeringTutorial.openBundledExtensionsContributing)",
+						"description": "First-party extensions ship beside the core—same packaging model as your own extensions.\n[Open extensions CONTRIBUTING](command:engineeringTutorial.openBundledExtensionsContributing)\n[Preview extensions CONTRIBUTING (Markdown)](command:engineeringTutorial.previewBundledExtensionsContributing)",
 						"media": {
 							"markdown": "walkthrough/06-extensions.md"
 						},
@@ -148,7 +196,7 @@
 					{
 						"id": "tooling",
 						"title": "6. Engineering tooling",
-						"description": "Containers, tests, and automation scripts mirror professional practice.\n[Open dev container README](command:engineeringTutorial.openDevcontainerReadme)",
+						"description": "Containers, tests, and automation scripts mirror professional practice.\n[Open dev container README](command:engineeringTutorial.openDevcontainerReadme)\n[Preview dev container README (Markdown)](command:engineeringTutorial.previewDevcontainerReadme)",
 						"media": {
 							"markdown": "walkthrough/07-tooling.md"
 						},
@@ -159,7 +207,7 @@
 					{
 						"id": "vscodePractices",
 						"title": "7. Daily software engineering in VS Code",
-						"description": "Apply the tour: Git, Problems, Tasks, Search, and the Command Palette.",
+						"description": "Apply the tour: Git, Problems, Tasks, Search, and the Command Palette.\n[Preview this step as Markdown](command:engineeringTutorial.previewWalkthroughDailyPractices)",
 						"media": {
 							"markdown": "walkthrough/08-vscode-practices.md"
 						},
@@ -170,7 +218,7 @@
 					{
 						"id": "wrapUp",
 						"title": "8. Wrap up & next steps",
-						"description": "Re-open the walkthrough anytime from the Command Palette.\n[Open this walkthrough](command:engineeringTutorial.openThisWalkthrough)\n[Open syllabus](command:engineeringTutorial.openSyllabus)",
+						"description": "Re-open the walkthrough anytime from the Command Palette.\n[Open this walkthrough](command:engineeringTutorial.openThisWalkthrough)\n[Open syllabus](command:engineeringTutorial.openSyllabus)\n[Preview syllabus (Markdown)](command:engineeringTutorial.previewSyllabus)",
 						"media": {
 							"markdown": "walkthrough/09-wrap-up.md"
 						},
