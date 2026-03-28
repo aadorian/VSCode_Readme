@@ -13,7 +13,7 @@ Skim:
 
 ### Practice in VS Code
 
-1. **Terminal** (`Ctrl+`` `): run a real script from your own project (tests, lint, build).
+1. **Terminal** (`` Ctrl+` `` on Windows/Linux, `` ⌃` `` on macOS): run a real script from your own project (tests, lint, build).
 2. **Problems** (`Ctrl+Shift+M`): fix until the panel is clean—treat diagnostics like a mini CI.
 
 ### SE takeaway
