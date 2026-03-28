@@ -1,0 +1,195 @@
+{
+	"name": "engineering-tutorial",
+	"displayName": "VS Code SE Practices (education walkthrough)",
+	"description": "Step-by-step walkthrough for software engineering practice on VS Code, aligned with this repo's education/README.md syllabus.",
+	"version": "0.1.0",
+	"publisher": "vscode-readme-education",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aadorian/VSCode_Readme"
+	},
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"walkthrough",
+		"education",
+		"vscode",
+		"software engineering"
+	],
+	"activationEvents": [
+		"onWalkthrough:vscodeSECollaborationTour",
+		"onCommand:engineeringTutorial.openSyllabus",
+		"onCommand:engineeringTutorial.openCodeOssOverview",
+		"onCommand:engineeringTutorial.openContributing",
+		"onCommand:engineeringTutorial.openPullRequestTemplate",
+		"onCommand:engineeringTutorial.openCopilotInstructions",
+		"onCommand:engineeringTutorial.openSessionsReadme",
+		"onCommand:engineeringTutorial.openBundledExtensionsContributing",
+		"onCommand:engineeringTutorial.openDevcontainerReadme",
+		"onCommand:engineeringTutorial.openThisWalkthrough"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "engineeringTutorial.openSyllabus",
+				"title": "SE Tutorial: Open syllabus (education/README.md)"
+			},
+			{
+				"command": "engineeringTutorial.openCodeOssOverview",
+				"title": "SE Tutorial: Open Code - OSS overview"
+			},
+			{
+				"command": "engineeringTutorial.openContributing",
+				"title": "SE Tutorial: Open CONTRIBUTING"
+			},
+			{
+				"command": "engineeringTutorial.openPullRequestTemplate",
+				"title": "SE Tutorial: Open pull request template"
+			},
+			{
+				"command": "engineeringTutorial.openCopilotInstructions",
+				"title": "SE Tutorial: Open architecture / Copilot instructions"
+			},
+			{
+				"command": "engineeringTutorial.openSessionsReadme",
+				"title": "SE Tutorial: Open sessions README"
+			},
+			{
+				"command": "engineeringTutorial.openBundledExtensionsContributing",
+				"title": "SE Tutorial: Open bundled extensions CONTRIBUTING"
+			},
+			{
+				"command": "engineeringTutorial.openDevcontainerReadme",
+				"title": "SE Tutorial: Open dev container README"
+			},
+			{
+				"command": "engineeringTutorial.openThisWalkthrough",
+				"title": "SE Tutorial: Open this walkthrough"
+			}
+		],
+		"walkthroughs": [
+			{
+				"id": "vscodeSECollaborationTour",
+				"title": "Software engineering on VS Code (open collaboration tour)",
+				"description": "Follow the same path as education/README.md: community, GitHub workflows, architecture, sessions, extensions, and tooling—plus everyday VS Code practices.",
+				"steps": [
+					{
+						"id": "welcome",
+						"title": "How to use this tutorial",
+						"description": "Open this repository as a VS Code folder, then use the links in each step. Shortcuts appear in the Command Palette under **SE Tutorial:**.\n[Open syllabus in editor](command:engineeringTutorial.openSyllabus)",
+						"media": {
+							"markdown": "walkthrough/01-welcome.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "openSource",
+						"title": "1. Open source community",
+						"description": "Understand Code - OSS vs the VS Code product, then read how contributions are expected.\n[Open overview](command:engineeringTutorial.openCodeOssOverview)\n[Open CONTRIBUTING](command:engineeringTutorial.openContributing)",
+						"media": {
+							"markdown": "walkthrough/02-open-source.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "collaboration",
+						"title": "2. Collaboration on GitHub",
+						"description": "Structured issues and pull requests are how large teams stay aligned.\n[Open PR template](command:engineeringTutorial.openPullRequestTemplate)",
+						"media": {
+							"markdown": "walkthrough/03-collaboration.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "architecture",
+						"title": "3. Architecture & Extension API",
+						"description": "See how the editor is layered and where extensions fit.\n[Open Copilot / architecture instructions](command:engineeringTutorial.openCopilotInstructions)",
+						"media": {
+							"markdown": "walkthrough/04-architecture.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "sessions",
+						"title": "4. Sessions, chat & agents",
+						"description": "Modern VS Code adds agentic workflows on top of the workbench.\n[Open sessions README](command:engineeringTutorial.openSessionsReadme)",
+						"media": {
+							"markdown": "walkthrough/05-sessions.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "extensions",
+						"title": "5. Bundled extensions ecosystem",
+						"description": "First-party extensions ship beside the core—same packaging model as your own extensions.\n[Open extensions CONTRIBUTING](command:engineeringTutorial.openBundledExtensionsContributing)",
+						"media": {
+							"markdown": "walkthrough/06-extensions.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "tooling",
+						"title": "6. Engineering tooling",
+						"description": "Containers, tests, and automation scripts mirror professional practice.\n[Open dev container README](command:engineeringTutorial.openDevcontainerReadme)",
+						"media": {
+							"markdown": "walkthrough/07-tooling.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "vscodePractices",
+						"title": "7. Daily software engineering in VS Code",
+						"description": "Apply the tour: Git, Problems, Tasks, Search, and the Command Palette.",
+						"media": {
+							"markdown": "walkthrough/08-vscode-practices.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					},
+					{
+						"id": "wrapUp",
+						"title": "8. Wrap up & next steps",
+						"description": "Re-open the walkthrough anytime from the Command Palette.\n[Open this walkthrough](command:engineeringTutorial.openThisWalkthrough)\n[Open syllabus](command:engineeringTutorial.openSyllabus)",
+						"media": {
+							"markdown": "walkthrough/09-wrap-up.md"
+						},
+						"completionEvents": [
+							"onStepSelected"
+						]
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"vscode:prepublish": "npm run compile"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.0",
+		"@types/vscode": "^1.85.0",
+		"typescript": "^5.6.0"
+	}
+}

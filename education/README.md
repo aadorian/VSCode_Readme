@@ -4,6 +4,8 @@ This repository is organized as a **self-contained reading path** through how [V
 
 Start anywhere, but the order below matches a typical “from community to code” progression.
 
+**Optional:** Install and run the **[engineering-tutorial](../engineering-tutorial/)** VS Code extension from this repository for an interactive walkthrough and **SE Tutorial:** commands that open the files below.
+
 ---
 
 ## 1. Open source community

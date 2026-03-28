@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "syllabus (repo root)",
+			"path": "."
+		},
+		{
+			"name": "engineering-tutorial extension",
+			"path": "engineering-tutorial"
+		}
+	],
+	"settings": {}
+}

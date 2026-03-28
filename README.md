@@ -10,9 +10,18 @@ Read the learning map and folder guide:
 
 **[education/README.md](education/README.md)**
 
+## Interactive tutorial (walkthrough extension)
+
+Step-by-step **Software engineering on VS Code** tour (aligned with `education/README.md`) ships as **[engineering-tutorial/](engineering-tutorial/)**:
+
+1. Open **[VSCode_Readme.code-workspace](VSCode_Readme.code-workspace)** (or add repo root + `engineering-tutorial/` to one workspace).
+2. In `engineering-tutorial/`: `npm install` and `npm run compile`.
+3. With the `engineering-tutorial` folder active, **Run and Debug → Run Extension**.
+4. In the new window: **Help → Welcome → Walkthroughs**, or Command Palette → **SE Tutorial: Open this walkthrough**.
+
 ## Hello world (Extension API sample)
 
-A minimal extension that follows this tour (bundled-extensions + Extension API) lives in **[hello-world-extension/](hello-world-extension/)** — see its README for `npm install`, compile, and **F5** steps.
+If present, a minimal extension sample lives in **[hello-world-extension/](hello-world-extension/)** — see its README for **F5** steps.
 
 ## Quick links
 
